@@ -2,3 +2,9 @@
     background-color: rgb(0, 128, 255);
     color:white
 }
+
+.loan-detail{
+    height:calc(100vh - 62px);
+    position: sticky;
+    top: 60px;
+}

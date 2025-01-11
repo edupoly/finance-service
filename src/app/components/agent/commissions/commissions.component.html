@@ -2,7 +2,7 @@
     <h2>Commissions</h2>
     <div *ngIf="!loans.length">No Loans to display</div>
     <div *ngIf="loans.length">
-        <table class="table table-bordered">
+        <table class="table table-bordered text-center">
             <tr>
                 <th>Customer Name</th>
                 <th>Loan Item</th>
@@ -20,7 +20,7 @@
                 <td>{{loan.commission|currency:"INR"}}</td>
             </tr>
             <tr>
-                <td colspan="5"><b>Total Commission</b></td>
+                <td colspan="5" class="text-end"><b>Total Commission</b></td>
                 <td colspan="1"><b>{{totalCommission|currency:"INR"}}</b></td>
             </tr>
         </table>

@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CustomerService {
-  dbUrl:any = 'http://localhost:4600';
-
+  dbUrl:any = 'https://finance-service-backend-production.up.railway.app';
+  //dbUrl:any = 'http://localhost:4600';
   constructor(public http:HttpClient) { }
 
   getLoansByCustomerMail(mail:any){

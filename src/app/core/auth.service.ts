@@ -5,7 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AuthService {
-  dbUrl:any = 'http://localhost:4600';
+  dbUrl:any = 'https://finance-service-backend-production.up.railway.app';
+  //dbUrl:any = 'http://localhost:4600';
   currentUser:any|null = null;
   constructor(public http:HttpClient) {}
 

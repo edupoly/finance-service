@@ -23,8 +23,8 @@
     </div>
     <div *ngIf="freshLoans.length">
         <h3>Fresh Loans - {{freshLoans.length}}</h3>
-        <div class="d-flex loan-group flex-wrap">
-            <div *ngFor="let loan of freshLoans" class="w-25">
+        <div class="d-flex loan-group flex-wrap justify-content-evenly">
+            <div *ngFor="let loan of freshLoans" class="w-25 me-2">
                 <app-fresh-loan [loan]="loan"></app-fresh-loan>
             </div>
         </div>
